@@ -95,8 +95,9 @@ export default function ContactSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true, margin: "-100px" }}
+            className="bg-white rounded-xl shadow-md p-8"
           >
-            <h3 className="text-xl font-semibold mb-6">Let's Talk</h3>
+            <h3 className="text-xl font-semibold mb-6">Connect With Me</h3>
             
             <div className="space-y-6">
               {contactInfo.map((item, index) => (
@@ -112,7 +113,7 @@ export default function ContactSection() {
               ))}
             </div>
             
-            <h3 className="text-xl font-semibold mt-10 mb-6">Follow Me</h3>
+            <h3 className="text-xl font-semibold mt-10 mb-6">Social Media</h3>
             
             <div className="flex gap-4">
               {socialLinks.map((link, index) => (
@@ -127,101 +128,6 @@ export default function ContactSection() {
                 </a>
               ))}
             </div>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true, margin: "-100px" }}
-          >
-            <h3 className="text-xl font-semibold mb-6">Send a Message</h3>
-            
-            <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                <FormField
-                  control={form.control}
-                  name="name"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Name</FormLabel>
-                      <FormControl>
-                        <Input 
-                          placeholder="Your name" 
-                          {...field} 
-                          className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Email</FormLabel>
-                      <FormControl>
-                        <Input 
-                          placeholder="Your email" 
-                          type="email" 
-                          {...field} 
-                          className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                
-                <FormField
-                  control={form.control}
-                  name="subject"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Subject</FormLabel>
-                      <FormControl>
-                        <Input 
-                          placeholder="Subject" 
-                          {...field} 
-                          className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                
-                <FormField
-                  control={form.control}
-                  name="message"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Message</FormLabel>
-                      <FormControl>
-                        <Textarea 
-                          placeholder="Your message" 
-                          {...field} 
-                          rows={4}
-                          className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                
-                <Button 
-                  type="submit" 
-                  disabled={isSubmitting}
-                  className="w-full bg-primary text-white font-medium py-3 rounded-lg hover:bg-primary-dark transition-colors"
-                >
-                  {isSubmitting ? "Sending..." : "Send Message"}
-                </Button>
-              </form>
-            </Form>
           </motion.div>
         </div>
       </div>
