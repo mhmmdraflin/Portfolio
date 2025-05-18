@@ -24,7 +24,7 @@ export default function AboutSection() {
             <div className="relative flex justify-center">
               <div className="w-64 h-64 rounded-full overflow-hidden border-8 border-white shadow-xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" 
+                  src="https://media.licdn.com/dms/image/v2/D5603AQEWdh_zo7H-dQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1726310165264?e=2147483647&v=beta&t=XFChVf_Rc4WRiCDkbLZAdX7tbPfv2Vbq5In_1wpclPE" 
                   alt="About me" 
                   className="w-full h-full object-cover" 
                 />
@@ -36,8 +36,8 @@ export default function AboutSection() {
                     <Trophy className="h-6 w-6" />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-600">Award-winning</p>
-                    <p className="font-bold">UI/UX Designer</p>
+                    <p className="text-sm text-gray-600">Undergraduate Informatics Students</p>
+                    <p className="font-bold">Mobile Development</p>
                   </div>
                 </div>
               </div>
@@ -55,15 +55,11 @@ export default function AboutSection() {
             <div className="w-20 h-1.5 bg-primary mb-6 rounded-full"></div>
             
             <p className="text-gray-600 mb-6">
-              I'm a passionate UI/UX designer and developer with over 5 years of experience creating 
-              digital products for clients around the world. My expertise includes user research, 
-              wireframing, prototyping, and implementing responsive designs.
+              I am an Informatics student in Universitas Bhinneka Nusantara with expertise in Android app development using Kotlin and Java. I am passionate about building innovative and user-friendly mobile applications, continually enhancing my skills to deliver high-quality solutions in mobile development.
             </p>
             
             <p className="text-gray-600 mb-8">
-              I believe in a user-centered approach to design, creating experiences that are not only 
-              visually appealing but also intuitive and accessible. My goal is to bridge the gap between 
-              user needs and business objectives through thoughtful design.
+              I believe in a user-centered approach to mobile development, focusing on creating applications that are not only functional and innovative but also intuitive and accessible. My goal is to deliver high-quality mobile solutions that effectively meet user needs while supporting business objectives.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
@@ -79,7 +75,7 @@ export default function AboutSection() {
               asChild
               className="px-8 py-6 bg-primary text-white font-medium rounded-full shadow-md hover:bg-primary-dark transition-colors inline-flex items-center"
             >
-              <a href="/John_Doe_CV.pdf" download>
+              <a href="/Muhammad_Rafli_Nurfathan_CV.pdf" download>
                 <span>Download CV</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L10 12.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
