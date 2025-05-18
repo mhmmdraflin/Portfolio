@@ -31,6 +31,13 @@ export default function HeroSection() {
                 variant="outline" 
                 className="px-8 py-6 border border-primary text-primary font-medium rounded-full hover:bg-primary hover:text-white transition-colors"
               >
+                <a href="#portfolio">View Projects</a>
+              </Button>
+              <Button 
+                asChild
+                variant="ghost" 
+                className="px-8 py-6 text-gray-700 font-medium rounded-full hover:bg-gray-100 transition-colors"
+              >
                 <a href="/John_Doe_CV.pdf" download>Download CV</a>
               </Button>
             </div>
@@ -48,12 +55,12 @@ export default function HeroSection() {
               className="w-full h-auto rounded-2xl shadow-xl" 
             />
 
-            {/* Floating Device */}
+            {/* Floating Device with GIF */}
             <div className="absolute -bottom-10 -left-10 md:block hidden">
               <img 
-                src="https://images.unsplash.com/photo-1616077168079-7e09a677fb2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" 
-                alt="Mobile device" 
-                className="w-48 rounded-xl shadow-lg border-4 border-white" 
+                src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHFremVkbmgxbTlmMnYxenRtYnAwdTZwMnZvcWgydmxvZTgxZWZkcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif" 
+                alt="Mobile design process GIF" 
+                className="w-48 rounded-xl shadow-lg border-4 border-white object-cover" 
               />
             </div>
           </motion.div>

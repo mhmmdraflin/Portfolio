@@ -23,9 +23,9 @@ export default function AboutSection() {
           >
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" 
                 alt="About me" 
-                className="w-full h-auto rounded-2xl shadow-xl" 
+                className="w-full h-auto rounded-2xl shadow-xl object-cover" 
               />
               
               <div className="absolute -bottom-6 -right-6 bg-white rounded-xl p-4 shadow-lg">
