@@ -27,9 +27,9 @@ export default function CertificatesSection() {
       <div className="container mx-auto px-6">
         <motion.div 
           className="text-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true, margin: "-100px" }}
         >
           <h2 className="text-3xl font-bold mb-2">Certificates & Awards</h2>
@@ -44,9 +44,9 @@ export default function CertificatesSection() {
             <motion.div 
               key={index}
               className="bg-light rounded-xl shadow-sm overflow-hidden transform hover:scale-105 transition-transform"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true, margin: "-100px" }}
             >
               <img 
